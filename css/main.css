@@ -90,3 +90,7 @@ ul {
     width: 20px;
     vertical-align: middle;
 }
+
+.profpic {
+    max-width: 150px;
+}

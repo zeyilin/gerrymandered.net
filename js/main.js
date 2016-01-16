@@ -1,6 +1,6 @@
 function getLocation() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
+        navigator.geolocation.getCurrentPosition(submitLocation);
     } else {
         document.getElementById("loc").innerHTML = "Geolocation is not supported by this browser.";
     }
@@ -22,35 +22,7 @@ function showPosition(position) {
 }
 
 function submitLocation(position) {
-    var params = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude,
-        username: 'gangoffour'
-    };
 
-    $.ajax({
-        async: false,
-        data: params,
-        type: 'GET',
-        url: 'http://api.geonames.org/findNearbyPostalCodesJSON',
-        success: function (data) {
-            $('#address-input').val(data['postalCodes'][0]['postalCode']);
-            $('#address-form').submit();
-        }
-    });
-
-    //document.forms["address-form"].submit();
-}
-
-function loadAddress() {
-    var address = getUrlVars()["address-input"].replace(/\+/g, " ");
-    document.getElementById('address').innerHTML = address;
-}
-
-function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
-        vars[key] = value;
-    });
-    return vars;
+    $('#address-input').val(position.coords.latitude +"_" + position.coords.longitude);
+    $('#address-form').submit();
 }
