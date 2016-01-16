@@ -23,6 +23,6 @@ function showPosition(position) {
 
 function submitLocation(position) {
 
-    $('#address-input').val(position.coords.latitude +"_" + position.coords.longitude);
+    $('#address-input').val(position.coords.latitude +"____" + position.coords.longitude);
     $('#address-form').submit();
 }

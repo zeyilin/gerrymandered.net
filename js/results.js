@@ -31,7 +31,7 @@ function update(json) {
     $("#rep-fb").attr("href", "http://www.fb.com/" + json[0].facebook_id);
     $("#rep-twitter").attr("href", "http://www.twitter.com/" + json[0].twitter_id);
     $('#rep-twitter').html("<img class=\"tweet\" src=\"img/twitter.png\">" + "@" + json[0].twitter_id);
-    
+
     //Sen1
     //Name
     $('#sen1-first').html(json[1].first_name);
@@ -52,7 +52,7 @@ function update(json) {
     $("#sen1-fb").attr("href", "http://www.fb.com/" + json[1].facebook_id);
     $("#sen1-twitter").attr("href", "http://www.twitter.com/" + json[1].twitter_id);
     $('#sen1-twitter').html("<img class=\"tweet\" src=\"img/twitter.png\">" + "@" + json[1].twitter_id);
-    
+
     //Sen2
     //Name
     $('#sen2-first').html(json[2].first_name);
@@ -92,20 +92,26 @@ function loadJsonData() {
     var address = getUrlVars()["address-input"];
 
 
-    var lat = address.split("_")[0];
-    var long = address.split("_")[1];
+    var lat = address.split("____")[0];
+    var long = address.split("____")[1];
     //alert(long);
     var url;
-    if (long != undefined){
+    if (long != undefined) {
         url = ("http://gerrymandered.herokuapp.com/?address=" + lat + "," + long);
     } else {
         url = ("http://gerrymandered.herokuapp.com/?address=" + address);
     }
 
-    $.get(url, function (data) {
-        //alert(url);
-        update(data);
-    });
+    $.get(url)
+        .success(function (data) {
+            //alert(url);
+            update(data);
+        })
+        .error(function () {
+            alert("Please enter a more specific or valid location");
+            window.location.replace("index.html");
+
+        });
 
 
 }
