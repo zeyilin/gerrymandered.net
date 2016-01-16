@@ -755,7 +755,7 @@ this the same font stack that Normalize.css sets for the `body`.
     zoom: 1;
     line-height: normal;
     white-space: nowrap;
-    vertical-align: middle;
+    /*!*vertical-align: middle;*! caused weird alignment with small screens*/
     text-align: center;
     cursor: pointer;
     -webkit-user-drag: none;
