@@ -2,7 +2,6 @@ body {
     font-family: Helvetica, arial, sans-serif;
     font-size: 14px;
     line-height: 1.6;
-    background-color: white;
     padding: 30px;
 }
 
@@ -30,6 +29,14 @@ body {
 
 .address-input {
     width: 30em;
+}
+
+.address-icon {
+    width: 17px;
+    z-index: 300;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: -25px;
 }
 
 .table {

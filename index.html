@@ -24,10 +24,12 @@
 </div>
 <div><br></div>
 
-<form class="pure-form" action="results.html" method="GET">
+<form class="pure-form" action="results.html" method="GET" name="address-form" id="address-form">
     <div class="centered">
         <input id="address-input" name="address-input" class="address-input" type="text"
-               placeholder="Find Internet service in your area!"/>
+               placeholder="Enter your address"/>
+        <img src="img/loc.png" class=address-icon alt="location" onclick="getLocation()"/>
+
     </div>
     <div><br></div>
     <div class="centered">
