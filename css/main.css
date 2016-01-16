@@ -1,12 +1,12 @@
 body {
-    font-family: Helvetica, arial, sans-serif;
-    font-size: 14px;
+    font-family: Roboto, arial, sans-serif;
+    font-size: 16px;
     line-height: 1.6;
     padding: 30px;
 }
 
 .main-title {
-    font-size: 50px;
+    font-size: 64px;
     text-align: center;
     font-weight: 900;
 }
@@ -16,7 +16,7 @@ body {
 }
 
 .main-top-padding {
-    padding: 6em;
+    padding: 8em;
 }
 
 .centered {
@@ -25,10 +25,11 @@ body {
 
 .button {
     width: 10em;
+    font-weight: bold;
 }
 
 .address-input {
-    width: 30em;
+    width: 35em;
 }
 
 .address-icon {
@@ -93,4 +94,19 @@ ul {
 
 .profpic {
     max-width: 150px;
+}
+
+.bgimg {
+    width: 900px;
+    z-index: -100;
+    position: relative;
+}
+
+.bgimg-div {
+    z-index: -100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -60%)
 }
