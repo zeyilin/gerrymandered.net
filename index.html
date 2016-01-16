@@ -7,35 +7,38 @@
     <link rel="stylesheet" href="css/pure/pure.css">
     <link rel="stylesheet" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 </head>
 <body>
 <div class="main-top-padding"></div>
 <div class="main-title">
-    <a style="color:#4885ed">bro</a><a style="color:#db3236">ad</a><a style="color:#f4c20d">ba</a><a
-        style="color:#4885ed">nd</a><a style="color:#3cba54">ti</a>.<a style="color:#db3236">me</a>
+    <!--<a style="color:#4885ed">bro</a><a style="color:#db3236">ad</a><a style="color:#f4c20d">ba</a><a-->
+    <!--style="color:#4885ed">nd</a><a style="color:#3cba54">ti</a>.<a style="color:#db3236">me</a>-->
+    <a style="color:#4885ed" href="index.html" class="title">broad</a><a style="color:#db3236" href="index.html"
+                                                                         class="title">band</a><a style="color:#f4c20d"
+                                                                                                  href="index.html"
+                                                                                                  class="title">ti</a>.<a
+        style="color:#3cba54" href="index.html" class="title">me</a>
 </div>
 <div><br></div>
 
-<form class="pure-form" target="results.html">
-    <div class="address-div">
-        <input id="address-input" class="address-input" type="text" placeholder="Find Internet service in your area!"/>
+<form class="pure-form" action="results.html" method="GET">
+    <div class="centered">
+        <input id="address-input" name="address-input" class="address-input" type="text"
+               placeholder="Find Internet service in your area!"/>
     </div>
     <div><br></div>
-    <div class="button-div">
-        <button type="submit" class="pure-button button">Search</button>
+    <div class="centered">
+        <input type="submit" class="pure-button button"/>
         <a class="pure-button button" href="faq.html">About This Site</a>
     </div>
 </form>
+<button onclick="getLocation()" class="pure-button">Location wow</button>
+<div id="loc"></div>
+<div id="zip"></div>
+
+
 </body>
-
-<script type="text/javascript">
-$(function() {
-  $('form').submit(function(){
-    $.post('http://example.com/upload', function() {
-      window.location = 'http://google.com';
-    });
-    return false;
-  });
-});
-
-</script></html>
+</html>

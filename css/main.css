@@ -1,5 +1,9 @@
 body {
-    font-family: Roboto, sans-serif;
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    background-color: white;
+    padding: 30px;
 }
 
 .main-title {
@@ -8,22 +12,15 @@ body {
     font-weight: 900;
 }
 
-.main-input {
-
-}
-
-.l-box {
-    padding: 5px;
+.title {
+    text-decoration: none;
 }
 
 .main-top-padding {
     padding: 6em;
 }
 
-.button-div {
-    /*position: absolute;*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
+.centered {
     text-align: center
 }
 
@@ -34,6 +31,19 @@ body {
 .address-input {
     width: 30em;
 }
-.address-div {
+
+.table {
     text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.subtitle {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: bolder;
 }
