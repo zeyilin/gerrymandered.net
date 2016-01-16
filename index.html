@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="css/pure/pure.css">
     <link rel="stylesheet" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
-
-
 </head>
 <body>
 <div class="main-top-padding"></div>
@@ -18,15 +16,26 @@
 </div>
 <div><br></div>
 
-<form class="pure-form">
+<form class="pure-form" target="results.html">
     <div class="address-div">
-        <input id="address-input" class="address-input" type="text" placeholder="Zip Code"/>
+        <input id="address-input" class="address-input" type="text" placeholder="Find Internet service in your area!"/>
     </div>
     <div><br></div>
     <div class="button-div">
         <button type="submit" class="pure-button button">Search</button>
-        <button type="button" class="pure-button button">More Info</button>
+        <a class="pure-button button" href="faq.html">About This Site</a>
     </div>
 </form>
 </body>
-</html>
+
+<script type="text/javascript">
+$(function() {
+  $('form').submit(function(){
+    $.post('http://example.com/upload', function() {
+      window.location = 'http://google.com';
+    });
+    return false;
+  });
+});
+
+</script></html>
