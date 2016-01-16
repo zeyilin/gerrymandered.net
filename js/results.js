@@ -26,7 +26,7 @@ function update(json) {
     //links
     $("#rep-contact").attr("href", json[1].contact_form);
 
-    $("#rep-profpic").attr("src", "https://avatars.io/facebook/" + json[1].facebook_id);
+    $("#rep-profpic").attr("src", json[1].photo_URL);
     $("#rep-website").attr("href", json[1].website);
     $("#rep-fb").attr("href", "http://www.fb.com/" + json[1].facebook_id);
     $("#rep-twitter").attr("href", "http://www.twitter.com/" + json[1].twitter_id);
@@ -47,7 +47,7 @@ function update(json) {
 
     //links
     $("#sen1-contact").attr("href", json[0].contact_form);
-    $("#sen1-profpic").attr("src", "https://avatars.io/facebook/" + json[0].facebook_id);
+    $("#sen1-profpic").attr("src", json[0].photo_URL);
     $("#sen1-website").attr("href", json[0].website);
     $("#sen1-fb").attr("href", "http://www.fb.com/" + json[0].facebook_id);
     $("#sen1-twitter").attr("href", "http://www.twitter.com/" + json[0].twitter_id);
@@ -67,7 +67,7 @@ function update(json) {
     $('#sen2-office').append(json[2].office);
 
     //links
-    $("#sen2-profpic").attr("src", "https://avatars.io/facebook/" + json[2].facebook_id);
+    $("#sen2-profpic").attr("src", json[2].photo_URL);
     $("#sen2-contact").attr("href", json[2].contact_form);
     $("#sen2-website").attr("href", json[2].website);
     $("#sen2-fb").attr("href", "http://www.fb.com/" + json[2].facebook_id);
