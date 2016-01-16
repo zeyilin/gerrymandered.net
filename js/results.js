@@ -12,46 +12,46 @@ function update(json) {
 
     //Rep
     //Name
-    $('#rep-first').html(json[0].first_name);
-    $('#rep-middle').html(json[0].middle_name);
-    $('#rep-last').html(json[0].last_name);
+    $('#rep-first').html(json[1].first_name);
+    $('#rep-middle').html(json[1].middle_name);
+    $('#rep-last').html(json[1].last_name);
 
     //static info
-    $('#rep-state').append(json[0].state_name);
-    $('#rep-gender').append(json[0].gender);
-    $('#rep-party').append(json[0].party);
-    $('#rep-chamber').append(json[0].chamber);
-    $('#rep-office').append(json[0].office);
+    $('#rep-state').append(json[1].state_name);
+    $('#rep-gender').append(json[1].gender);
+    $('#rep-party').append(json[1].party);
+    $('#rep-chamber').append(json[1].chamber);
+    $('#rep-office').append(json[1].office);
 
     //links
-    $("#rep-contact").attr("href", json[0].contact_form);
+    $("#rep-contact").attr("href", json[1].contact_form);
 
-    $("#rep-profpic").attr("src", "https://avatars.io/facebook/" + json[0].facebook_id);
-    $("#rep-website").attr("href", json[0].website);
-    $("#rep-fb").attr("href", "http://www.fb.com/" + json[0].facebook_id);
-    $("#rep-twitter").attr("href", "http://www.twitter.com/" + json[0].twitter_id);
-    $('#rep-twitter').html("<img class=\"tweet\" src=\"img/twitter.png\">" + "@" + json[0].twitter_id);
+    $("#rep-profpic").attr("src", "https://avatars.io/facebook/" + json[1].facebook_id);
+    $("#rep-website").attr("href", json[1].website);
+    $("#rep-fb").attr("href", "http://www.fb.com/" + json[1].facebook_id);
+    $("#rep-twitter").attr("href", "http://www.twitter.com/" + json[1].twitter_id);
+    $('#rep-twitter').html("<img class=\"tweet\" src=\"img/twitter.png\">" + "@" + json[1].twitter_id);
 
     //Sen1
     //Name
-    $('#sen1-first').html(json[1].first_name);
-    $('#sen1-middle').html(json[1].middle_name);
-    $('#sen1-last').html(json[1].last_name);
+    $('#sen1-first').html(json[0].first_name);
+    $('#sen1-middle').html(json[0].middle_name);
+    $('#sen1-last').html(json[0].last_name);
 
     //static info
-    $('#sen1-state').append(json[1].state_name);
-    $('#sen1-gender').append(json[1].gender);
-    $('#sen1-party').append(json[1].party);
-    $('#sen1-chamber').append(json[1].chamber);
-    $('#sen1-office').append(json[1].office);
+    $('#sen1-state').append(json[0].state_name);
+    $('#sen1-gender').append(json[0].gender);
+    $('#sen1-party').append(json[0].party);
+    $('#sen1-chamber').append(json[0].chamber);
+    $('#sen1-office').append(json[0].office);
 
     //links
-    $("#sen1-contact").attr("href", json[1].contact_form);
-    $("#sen1-profpic").attr("src", "https://avatars.io/facebook/" + json[1].facebook_id);
-    $("#sen1-website").attr("href", json[1].website);
-    $("#sen1-fb").attr("href", "http://www.fb.com/" + json[1].facebook_id);
-    $("#sen1-twitter").attr("href", "http://www.twitter.com/" + json[1].twitter_id);
-    $('#sen1-twitter').html("<img class=\"tweet\" src=\"img/twitter.png\">" + "@" + json[1].twitter_id);
+    $("#sen1-contact").attr("href", json[0].contact_form);
+    $("#sen1-profpic").attr("src", "https://avatars.io/facebook/" + json[0].facebook_id);
+    $("#sen1-website").attr("href", json[0].website);
+    $("#sen1-fb").attr("href", "http://www.fb.com/" + json[0].facebook_id);
+    $("#sen1-twitter").attr("href", "http://www.twitter.com/" + json[0].twitter_id);
+    $('#sen1-twitter').html("<img class=\"tweet\" src=\"img/twitter.png\">" + "@" + json[0].twitter_id);
 
     //Sen2
     //Name
