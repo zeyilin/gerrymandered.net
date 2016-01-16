@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/gerrymandered/.idea/gerrymandered.iml" filepath="$USER_HOME$/gerrymandered/.idea/gerrymandered.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/gerrymandered.iml" filepath="$PROJECT_DIR$/.idea/gerrymandered.iml" />
     </modules>
   </component>
 </project>
