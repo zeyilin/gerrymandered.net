@@ -16,13 +16,13 @@ function showPosition(position) {
         username: 'gangoffour'
     };
 
-    $.get('http://api.geonames.org/findNearbyPostalCodesJSON', params, function(result) {
+    $.get('http://api.geonames.org/findNearbyPostalCodesJSON', params, function (result) {
         $('#zip').html(result['postalCodes'][0]['postalCode']);
     });
 }
 
-function loadAddress(){
-    var address = getUrlVars()["address-input"].replace(/\+/g," ");
+function loadAddress() {
+    var address = getUrlVars()["address-input"].replace(/\+/g, " ");
     document.getElementById('address').innerHTML = address;
 }
 
