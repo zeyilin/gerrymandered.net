@@ -5,6 +5,7 @@ body {
     padding: 30px;
 }
 
+
 .main-title {
     font-size: 64px;
     text-align: center;
@@ -16,7 +17,7 @@ body {
 }
 
 .main-top-padding {
-    padding: 8em;
+    padding: 3em;
 }
 
 .centered {
@@ -36,7 +37,7 @@ body {
     width: 17px;
     z-index: 300;
     position: absolute;
-    margin-top: 8px;
+    margin-top: 10px;
     margin-left: -25px;
 }
 
@@ -96,17 +97,12 @@ ul {
     max-width: 150px;
 }
 
-.bgimg {
-    width: 900px;
+.logo {
+    width:600px;
     z-index: -100;
-    position: relative;
 }
 
-.bgimg-div {
-    z-index: -100;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -60%)
+.homepage {
+    margin-top:-170px;
+    z-index:100;
 }
