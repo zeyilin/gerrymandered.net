@@ -37,4 +37,5 @@ function update(json) {
     });
 
     $('#first_name').html(json[1].title + '. ' + json[1].first_name + " " + json[1].last_name + " (" + json[1].party + "-" + json[1].state + ")");
+    $('#voteimg').attr('src', json[2].photo_URL);
 }

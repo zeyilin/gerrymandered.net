@@ -35,15 +35,7 @@ function update(json) {
     var noList = ['MT', "VT", "ND", "WY", "DE", "SD", "AK"];
     var noDistrict = $.inArray(json[x].state, noList) > -1;
 
-    $('#entered-state').text(((count === 1) ? " " : ((noDistrict?'the At-Large District':'District '+ json[x].district) + ' of ')  ) + json[x].state_name);
-
-
-    //for(var j=0;j<json.length;j++){
-    //    var obj = json[j];
-    //    if (json[i].chamber === 'house'){
-    //
-    //    }
-    //}
+    $('#entered-state').text(((count === 1) ? " " : ((noDistrict ? 'the At-Large District' : 'District ' + json[x].district) + ' of ')  ) + json[x].state_name);
 
     var source = $("#legislator-template").html();
     var template = Handlebars.compile(source);
@@ -51,23 +43,15 @@ function update(json) {
     if (json[x]) $("tbody").append(template(json[x]));
     if (json[y]) $("tbody").append(template(json[y]));
     if (json[z]) $("tbody").append(template(json[z]));
-    ////issues list
-    //$.each(data, function (key, value) {
-    //    $('#rep-issues').append("<li>" + value.thing + "</li>");
-    //});
-    //
-    //
 }
 
 
 function loadJsonData() {
     var address = getUrlVars()["address-input"];
-
-    //alert(address);
     var lat = address.split("____")[0];
     var long = address.split("____")[1];
-    //alert(long);
     var url;
+
     if (long != undefined) {
         url = ("http://gerrymandered.herokuapp.com/?address=" + lat + "," + long);
     } else {
@@ -82,9 +66,7 @@ function loadJsonData() {
             alert("Please enter a more specific or valid location");
             window.location.replace("index.html");
         });
-
 }
-
 
 function getUrlVars() {
     var vars = {};
