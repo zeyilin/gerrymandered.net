@@ -35,6 +35,13 @@ function update(json) {
     $('#entered-state').text(((count === 1) ? " " : ('District ' + json[x].district + ' of ')  ) + json[x].state_name);
 
 
+    //for(var j=0;j<json.length;j++){
+    //    var obj = json[j];
+    //    if (json[i].chamber === 'house'){
+    //
+    //    }
+    //}
+
     var source = $("#legislator-template").html();
     var template = Handlebars.compile(source);
 
@@ -51,7 +58,6 @@ function update(json) {
     //$.each(data, function (key, value) {
     //    $('#rep-record').append("<li>" + value.thing + "</li>");
     //});
-
 }
 
 
