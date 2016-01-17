@@ -41,6 +41,13 @@ body {
     margin-left: -25px;
 }
 
+#gerryMap {
+    position: relative;
+    /*left-margin: auto;*/
+    /*right-margin: auto;*/
+    text-align: center
+}
+
 .table {
     /*text-align: center;*/
     margin: auto;
