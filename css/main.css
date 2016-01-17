@@ -69,7 +69,7 @@ ul {
 
 .name {
     font-size: 25px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .position {
@@ -104,11 +104,16 @@ ul {
 }
 
 .logo {
-    width:600px;
+    width: 600px;
     z-index: -100;
 }
 
 .homepage {
-    margin-top:-170px;
-    z-index:100;
+    margin-top: -170px;
+    z-index: 100;
+}
+
+.voteInfo {
+    font-size: 25px;
+    font-weight: bold;
 }

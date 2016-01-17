@@ -7,6 +7,6 @@ function getLocation() {
 }
 
 function submitLocation(position) {
-    $('#address-input').val(position.coords.latitude +"____" + position.coords.longitude);
+    $('#address-input').val(position.coords.latitude + "____" + position.coords.longitude);
     $('#address-form').submit();
 }

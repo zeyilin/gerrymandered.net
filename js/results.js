@@ -32,7 +32,10 @@ function update(json) {
         }
     }
 
-    $('#entered-state').text(((count === 1) ? " " : ('District ' + json[x].district + ' of ')  ) + json[x].state_name);
+    var noList = ['MT', "VT", "ND", "WY", "DE", "SD", "AK"];
+    var noDistrict = $.inArray(json[x].state, noList) > -1;
+
+    $('#entered-state').text(((count === 1) ? " " : ((noDistrict?'the At-Large District':'District '+ json[x].district) + ' of ')  ) + json[x].state_name);
 
 
     //for(var j=0;j<json.length;j++){
