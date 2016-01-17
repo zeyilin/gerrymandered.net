@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f2c1a6a3-a542-424d-8fe5-b335e3a06eba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/results.js" afterPath="$PROJECT_DIR$/js/results.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/voting.js" afterPath="$PROJECT_DIR$/js/voting.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/voting.html" afterPath="$PROJECT_DIR$/voting.html" />
     </list>
     <ignored path="broadbandti.me.iws" />
@@ -52,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.592299">
-              <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
+            <state vertical-scroll-proportion="-0.5416667">
+              <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -92,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="voting.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="voting.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/voting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.5">
-              <caret line="36" column="48" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.40770102">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#script#3;n#head#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -148,8 +145,8 @@
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/results.js" />
         <option value="$PROJECT_DIR$/js/voting.js" />
-        <option value="$PROJECT_DIR$/voting.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/voting.html" />
       </list>
     </option>
   </component>
@@ -512,7 +509,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453018631666</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="added vote page picture and some formatting">
+      <created>1453019051590</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1453019051590</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -569,7 +572,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="this already exists&#10;cry." />
     <MESSAGE value="update git stuff" />
     <MESSAGE value="update git stuff one more time" />
     <MESSAGE value="title change" />
@@ -594,7 +596,8 @@
     <MESSAGE value="minor formatting + zip code" />
     <MESSAGE value="voting records handlebars set up" />
     <MESSAGE value="voting records don't show blanks" />
-    <option name="LAST_COMMIT_MESSAGE" value="voting records don't show blanks" />
+    <MESSAGE value="added vote page picture and some formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="added vote page picture and some formatting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -691,24 +694,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5416667">
+          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/voting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.5">
-          <caret line="36" column="48" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.40770102">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#script#3;n#head#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.592299">
-          <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
