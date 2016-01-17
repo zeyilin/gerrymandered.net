@@ -6,23 +6,7 @@ function getLocation() {
     }
 }
 
-function showPosition(position) {
-    document.getElementById("loc").innerHTML = "Latitude: " + position.coords.latitude +
-        "<br>Longitude: " + position.coords.longitude;
-
-    //var params = {
-    //    lat: position.coords.latitude,
-    //    lng: position.coords.longitude,
-    //    username: 'gangoffour'
-    //};
-    //
-    //$.get('http://api.geonames.org/findNearbyPostalCodesJSON', params, function (result) {
-    //    $('#zip').html(result['postalCodes'][0]['postalCode']);
-    //});
-}
-
 function submitLocation(position) {
-
     $('#address-input').val(position.coords.latitude +"____" + position.coords.longitude);
     $('#address-form').submit();
 }

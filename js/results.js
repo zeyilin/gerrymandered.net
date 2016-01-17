@@ -54,10 +54,6 @@ function update(json) {
     //});
     //
     //
-    ////voting list
-    //$.each(data, function (key, value) {
-    //    $('#rep-record').append("<li>" + value.thing + "</li>");
-    //});
 }
 
 
@@ -86,11 +82,6 @@ function loadJsonData() {
 
 }
 
-function loadAddress() {
-    var address = getUrlVars()["address-input"];
-    document.getElementById('lat').innerHTML = address.split("_")[0];
-    document.getElementById('long').innerHTML = address.split("_")[1];
-}
 
 function getUrlVars() {
     var vars = {};
