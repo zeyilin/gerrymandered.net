@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f2c1a6a3-a542-424d-8fe5-b335e3a06eba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faq.html" afterPath="$PROJECT_DIR$/faq.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/voting.html" afterPath="$PROJECT_DIR$/voting.html" />
     </list>
     <ignored path="broadbandti.me.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="faq.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="faq.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/faq.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40770102">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state vertical-scroll-proportion="-24.375">
+              <caret line="39" column="77" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -116,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="voting.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="voting.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/voting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875">
-              <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.27180067">
+              <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#script#3;n#head#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -169,11 +169,11 @@
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/results.js" />
         <option value="$PROJECT_DIR$/js/voting.js" />
-        <option value="$PROJECT_DIR$/voting.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/results.html" />
         <option value="$PROJECT_DIR$/css/faq.css" />
         <option value="$PROJECT_DIR$/faq.html" />
+        <option value="$PROJECT_DIR$/voting.html" />
       </list>
     </option>
   </component>
@@ -183,7 +183,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="210" />
+    <option name="x" value="108" />
     <option name="y" value="23" />
     <option name="width" value="1470" />
     <option name="height" value="1027" />
@@ -560,11 +560,17 @@
       <option name="project" value="LOCAL" />
       <updated>1453020341287</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="update FAQ - header">
+      <created>1453020493310</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1453020493310</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="210" y="23" width="1470" height="1027" extended-state="0" />
+    <frame x="108" y="23" width="1470" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13181505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -617,7 +623,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="half working rep table!" />
     <MESSAGE value="some json parsing done, can load in rep" />
     <MESSAGE value="Loads in rep and two senators from location date" />
     <MESSAGE value="update to heroku + can take an address or use browser location" />
@@ -642,7 +647,8 @@
     <MESSAGE value="less padding" />
     <MESSAGE value="moar formats" />
     <MESSAGE value="update FAQ" />
-    <option name="LAST_COMMIT_MESSAGE" value="update FAQ" />
+    <MESSAGE value="update FAQ - header" />
+    <option name="LAST_COMMIT_MESSAGE" value="update FAQ - header" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -684,19 +690,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/voting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#script#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,9 +743,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/faq.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40770102">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="-24.375">
+          <caret line="39" column="77" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
           <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27180067">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#script#3;n#head#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
