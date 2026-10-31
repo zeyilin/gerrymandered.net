@@ -1,131 +1,73 @@
-function update(json) {
-    //var data = [{'thing': 'one'}, {'thing': 'two'}, {'thing': 'three'}]
+const API_BASE = "https://gerrymandered.herokuapp.com";
 
-    //var json = {
-    //    "employees": [
-    //        {"firstName": "John", "lastName": "Doe"},
-    //        {"firstName": "Anna", "lastName": "Smith"},
-    //        {"firstName": "Peter", "lastName": "Jones"}
-    //    ]
-    //}
-    //$('body').html(json[1].first_name);
+function updateOfficial(prefix, data) {
+    if (!data) return;
 
-    //Rep
-    //Name
-    $('#rep-first').html(json[0].first_name);
-    $('#rep-middle').html(json[0].middle_name);
-    $('#rep-last').html(json[0].last_name);
+    const q = (sel) => document.querySelector(sel);
 
-    //static info
-    $('#rep-state').append(json[0].state_name);
-    $('#rep-gender').append(json[0].gender);
-    $('#rep-party').append(json[0].party);
-    $('#rep-chamber').append(json[0].chamber);
-    $('#rep-office').append(json[0].office);
+    q(`#${prefix}-first`).textContent = data.first_name || "";
+    q(`#${prefix}-middle`).textContent = data.middle_name || "";
+    q(`#${prefix}-last`).textContent = data.last_name || "";
 
-    //links
-    $("#rep-contact").attr("href", json[0].contact_form);
+    q(`#${prefix}-state`).textContent = "State: " + (data.state_name || "N/A");
+    q(`#${prefix}-gender`).textContent = "Gender: " + (data.gender || "N/A");
+    q(`#${prefix}-party`).textContent = "Party: " + (data.party || "N/A");
+    q(`#${prefix}-chamber`).textContent = "Chamber: " + (data.chamber || "N/A");
+    q(`#${prefix}-office`).textContent = "Office: " + (data.office || "N/A");
 
-    $("#rep-profpic").attr("src", "https://avatars.io/facebook/" + json[0].facebook_id);
-    $("#rep-website").attr("href", json[0].website);
-    $("#rep-fb").attr("href", "http://www.fb.com/" + json[0].facebook_id);
-    $("#rep-twitter").attr("href", "http://www.twitter.com/" + json[0].twitter_id);
-    $('#rep-twitter').html("<img class=\"tweet\" src=\"img/twitter.png\">" + "@" + json[0].twitter_id);
+    q(`#${prefix}-contact`).setAttribute("href", data.contact_form || "#");
+    q(`#${prefix}-website`).setAttribute("href", data.website || "#");
 
-    //Sen1
-    //Name
-    $('#sen1-first').html(json[1].first_name);
-    $('#sen1-middle').html(json[1].middle_name);
-    $('#sen1-last').html(json[1].last_name);
-
-    //static info
-    $('#sen1-state').append(json[1].state_name);
-    $('#sen1-gender').append(json[1].gender);
-    $('#sen1-party').append(json[1].party);
-    $('#sen1-chamber').append(json[1].chamber);
-    $('#sen1-office').append(json[1].office);
-
-    //links
-    $("#sen1-contact").attr("href", json[1].contact_form);
-    $("#sen1-profpic").attr("src", "https://avatars.io/facebook/" + json[1].facebook_id);
-    $("#sen1-website").attr("href", json[1].website);
-    $("#sen1-fb").attr("href", "http://www.fb.com/" + json[1].facebook_id);
-    $("#sen1-twitter").attr("href", "http://www.twitter.com/" + json[1].twitter_id);
-    $('#sen1-twitter').html("<img class=\"tweet\" src=\"img/twitter.png\">" + "@" + json[1].twitter_id);
-
-    //Sen2
-    //Name
-    $('#sen2-first').html(json[2].first_name);
-    $('#sen2-middle').html(json[2].middle_name);
-    $('#sen2-last').html(json[2].last_name);
-
-    //static info
-    $('#sen2-state').append(json[2].state_name);
-    $('#sen2-gender').append(json[2].gender);
-    $('#sen2-party').append(json[2].party);
-    $('#sen2-chamber').append(json[2].chamber);
-    $('#sen2-office').append(json[2].office);
-
-    //links
-    $("#sen2-profpic").attr("src", "https://avatars.io/facebook/" + json[2].facebook_id);
-    $("#sen2-contact").attr("href", json[2].contact_form);
-    $("#sen2-website").attr("href", json[2].website);
-    $("#sen2-fb").attr("href", "http://www.fb.com/" + json[2].facebook_id);
-    $("#sen2-twitter").attr("href", "http://www.twitter.com/" + json[2].twitter_id);
-    $('#sen2-twitter').html("<img class=\"tweet\" src=\"img/twitter.png\">" + "@" + json[2].twitter_id);
-
-    ////issues list
-    //$.each(data, function (key, value) {
-    //    $('#rep-issues').append("<li>" + value.thing + "</li>");
-    //});
-    //
-    //
-    ////voting list
-    //$.each(data, function (key, value) {
-    //    $('#rep-record').append("<li>" + value.thing + "</li>");
-    //});
-
-}
-
-
-function loadJsonData() {
-    var address = getUrlVars()["address-input"];
-
-
-    var lat = address.split("____")[0];
-    var long = address.split("____")[1];
-    //alert(long);
-    var url;
-    if (long != undefined) {
-        url = ("http://gerrymandered.herokuapp.com/?address=" + lat + "," + long);
-    } else {
-        url = ("http://gerrymandered.herokuapp.com/?address=" + address);
+    if (data.facebook_id) {
+        q(`#${prefix}-profpic`).setAttribute("src", `https://avatars.io/facebook/${data.facebook_id}`);
+        q(`#${prefix}-fb`).setAttribute("href", `https://www.facebook.com/${data.facebook_id}`);
     }
 
-    $.get(url)
-        .success(function (data) {
-            //alert(url);
-            update(data);
-        })
-        .error(function () {
-            alert("Please enter a more specific or valid location");
-            window.location.replace("index.html");
-
-        });
-
-
+    if (data.twitter_id) {
+        q(`#${prefix}-twitter`).setAttribute("href", `https://twitter.com/${data.twitter_id}`);
+        q(`#${prefix}-twitter`).innerHTML = `<img class="tweet" src="img/twitter.png" alt="Twitter"> @${data.twitter_id}`;
+    }
 }
 
-function loadAddress() {
-    var address = getUrlVars()["address-input"];
-    document.getElementById('lat').innerHTML = address.split("_")[0];
-    document.getElementById('long').innerHTML = address.split("_")[1];
+async function loadJsonData() {
+    const params = new URLSearchParams(window.location.search);
+    const address = decodeURIComponent(params.get("address-input") || "");
+
+    if (!address) {
+        showError("No address provided.");
+        return;
+    }
+
+    const parts = address.split("____");
+    const query = parts.length > 1 ? `${parts[0]},${parts[1]}` : address;
+    const url = `${API_BASE}/?address=${encodeURIComponent(query)}`;
+
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("API request failed");
+
+        const json = await response.json();
+
+        if (!Array.isArray(json) || json.length < 3) {
+            showError("Could not find representatives for this location.");
+            return;
+        }
+
+        updateOfficial("rep", json[0]);
+        updateOfficial("sen1", json[1]);
+        updateOfficial("sen2", json[2]);
+    } catch {
+        showError("Please enter a more specific or valid location.");
+    }
 }
 
-function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
-        vars[key] = value;
-    });
-    return vars;
+function showError(message) {
+    const errorDiv = document.getElementById("error-message");
+    if (errorDiv) {
+        errorDiv.textContent = message;
+        errorDiv.style.display = "block";
+    } else {
+        alert(message);
+    }
+    window.location.replace("index.html");
 }

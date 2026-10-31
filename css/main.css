@@ -1,3 +1,11 @@
+:root {
+    --color-blue: #4885ed;
+    --color-red: #db3236;
+    --color-green: #3cba54;
+    --color-yellow: #f4c20d;
+    --color-dark: #000000;
+}
+
 body {
     font-family: Helvetica, arial, sans-serif;
     font-size: 14px;
@@ -15,12 +23,18 @@ body {
     text-decoration: none;
 }
 
+.title-blue { color: var(--color-blue); }
+.title-dark { color: var(--color-dark); }
+.title-red { color: var(--color-red); }
+.title-green { color: var(--color-green); }
+.title-yellow { color: var(--color-yellow); }
+
 .main-top-padding {
     padding: 6em;
 }
 
 .centered {
-    text-align: center
+    text-align: center;
 }
 
 .button {
@@ -29,18 +43,35 @@ body {
 
 .address-input {
     width: 30em;
+    max-width: 80vw;
 }
 
 .address-icon {
     width: 17px;
-    z-index: 300;
+    vertical-align: middle;
+}
+
+.location-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    margin-left: -28px;
+    vertical-align: middle;
+}
+
+.sr-only {
     position: absolute;
-    margin-top: 8px;
-    margin-left: -25px;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 .table {
-    /*text-align: center;*/
     margin: auto;
     width: 80%;
 }
@@ -61,7 +92,7 @@ ul {
 
 .name {
     font-size: 25px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .position {
@@ -76,13 +107,10 @@ ul {
 
 .list {
     font-size: 15px;
-    /*padding: 1em;*/
-
 }
 
 .tweet {
     width: 30px;
-    /*margin-top: 10px;*/
     vertical-align: middle;
 }
 
@@ -93,4 +121,10 @@ ul {
 
 .profpic {
     max-width: 150px;
+}
+
+.error-message {
+    color: var(--color-red);
+    font-size: 18px;
+    padding: 1em;
 }

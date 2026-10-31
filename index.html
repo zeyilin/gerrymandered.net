@@ -2,46 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerrymandered</title>
 
     <link rel="stylesheet" href="css/pure/pure.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
-    <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 <div class="main-top-padding"></div>
 <div class="main-title">
-    <a style="color:#4885ed" href="index.html" class="title">Gerry</a><a style="color:#000000" href="index.html"
-                                                                         class="title">mand</a><a style="color:#db3236"
-                                                                                                  href="index.html"
-                                                                                                  class="title">ered</a>
-    <!--<a style="color:#4885ed" href="index.html" class="title">broad</a><a style="color:#db3236" href="index.html"-->
-    <!--class="title">band</a><a style="color:#f4c20d"-->
-    <!--href="index.html" class="title">ti</a>.<a-->
-    <!--style="color:#3cba54" href="index.html" class="title">me</a>-->
+    <a class="title title-blue" href="index.html">Gerry</a><a class="title title-dark" href="index.html">mand</a><a class="title title-red" href="index.html">ered</a>
 </div>
 <div><br></div>
 
 <form class="pure-form" action="results.html" method="GET" name="address-form" id="address-form">
     <div class="centered">
+        <label for="address-input" class="sr-only">Enter your address</label>
         <input id="address-input" name="address-input" class="address-input" type="text"
-               placeholder="Address"/>
+               placeholder="Enter your address"/>
 
-        <img src="img/loc.png" class=address-icon alt="location" onclick="getLocation()"/>
-
+        <button type="button" class="location-btn" onclick="getLocation()" aria-label="Use my location">
+            <img src="img/loc.png" class="address-icon" alt="">
+        </button>
     </div>
     <div><br></div>
     <div class="centered">
-        <input type="submit" class="pure-button button"/>
+        <input type="submit" class="pure-button button" value="Search"/>
         <a class="pure-button button" href="faq.html">About This Site</a>
     </div>
 </form>
-<!--<button onclick="getLocation()" class="pure-button">Location wow</button>-->
-<!--<div id="loc"></div>-->
-<!--<div id="zip"></div>-->
 
 </body>
 </html>
